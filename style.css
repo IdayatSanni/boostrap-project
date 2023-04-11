@@ -1,0 +1,171 @@
+:root {
+  --accent-color: #f90047;
+  --link-color: #1f1f25;
+}
+
+.header {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero {
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.links {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.links:hover {
+  color: var(--accent-color);
+}
+
+.imgset-wrapper {
+  height: 400px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon {
+  color: var(--accent-color);
+}
+
+.box {
+  border-radius: 10px;
+}
+
+.box li {
+  color: #7e7e7e;
+}
+.box:hover {
+  background: linear-gradient(
+    111.3deg,
+    rgb(252, 56, 56) 11.7%,
+    rgb(237, 13, 81) 81.7%
+  );
+  color: white;
+  transition: all 0.2s ease-in-out 0s;
+  box-shadow: rgba(18, 18, 19, 0.2) 2px 10px 29px 0px;
+}
+
+.box:hover .icon {
+  color: white;
+}
+
+.box:hover li {
+  color: white;
+}
+
+.box:hover button {
+  background-color: white;
+  color: var(--accent-color);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+}
+.accordion-button::after {
+  width: 0;
+}
+
+.btn-process a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-process {
+  background-color: var(--accent-color);
+  border-radius: 10px;
+}
+
+.btn-process:hover {
+  color: var(--accent-color);
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+}
+
+.btn-process:hover a {
+  color: var(--accent-color);
+}
+
+.team img {
+  object-fit: cover;
+  height: 400px;
+}
+
+.icon-team {
+  color: #1f1f25;
+}
+
+.icon-team:hover {
+  color: var(--accent-color);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.icon-wrapper:hover {
+  background: linear-gradient(
+    111.3deg,
+    rgb(252, 56, 56) 11.7%,
+    rgb(237, 13, 81) 81.7%
+  );
+  color: white;
+  transition: all 0.2s ease-in-out 0s;
+  box-shadow: rgba(18, 18, 19, 0.2) 2px 10px 29px 0px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.footer-icon-section {
+  background-color: rgb(30, 31, 37);
+}
+
+.news-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.news-section:hover .overlay {
+  background-image: linear-gradient(
+    180deg,
+    rgba(252, 0, 77, 0.7),
+    rgba(255, 0, 0, 0.3)
+  );
+  cursor: pointer;
+}
+
+.news-button {
+  display: none;
+}
+
+.news-button:hover {
+  background-color: #f90047;
+}
+
+.news-section:hover .news-button {
+  display: block;
+}
+
+@media only screen and (max-width: 428px) {
+  .imgset-wrapper {
+    height: 600px;
+  }
+}
+
+.card-body {
+  color: black;
+}
